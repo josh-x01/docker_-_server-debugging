@@ -1,0 +1,35 @@
+# In this section we will server debugging
+# let us make sure you install net-tools
+# net-tools has utility packages whose are friends for debugging
+
+sudo apt install net-tools
+
+# netstat - to check working port and ips
+netstat-lpdn
+
+# ufw - working with firewall
+sudo ufw status
+# if inactive
+sudo ufw enable
+
+# disk utilities
+# result with bytes
+df
+# human readable disk status
+df -h
+
+# memory managment
+# memory usage with bytes
+free
+# human readable usage status
+free -h
+
+#check running programs
+ps aufx
+
+#check service
+ls /etc/init.d/
+# status start stop
+sudo /etc/init.d/serviceName status
+sudo /etc/init.d/serviceName start
+sudo /etc/init.d/serviceName stop
